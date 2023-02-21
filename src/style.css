@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+
+    html{
+        font-family: 'Nunito', sans-serif; 
+    
+    }
+
+    h1{
+        @apply text-3xl capitalize;
+
+    }
+
+}
+
+@layer components{
+    /* .container{
+        margin-inline: auto;
+        border:1px solid red;
+        max-width: 1200px;
+        padding:1rem 2rem;
+
+    } */
+
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .link{
+        @apply capitalize font-600 rounded-sm p-1 transition-all;
+    }
+    .link:hover{
+       @apply bg-indigo-200;
+    }
+
+   .position-center{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+   }
+
+   .card{
+    @apply px-3 py-5 rounded-md w-sm  text-center lg:w-m lg:text-left bg-white;
+    box-shadow: rgba(79, 70, 229,0.5) 0px 2px 8px 0px;
+
+   }
+}

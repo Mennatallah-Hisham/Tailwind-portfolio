@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+
+    <script
+      src="https://kit.fontawesome.com/86ec296f97.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>personal portfolio</title>
+  </head>
+  <body>
+    <nav
+      class="sticky top-0 left-0 px-7 py-3 w-full bg-white flex justify-between align-middle z-10"
+    >
+      <p class="uppercase font-700 text-xl text-indigo-800">jonas</p>
+
+      <button class="md:hidden nav-btn z-30">
+        <i class="fas fa-times text-white hidden nav-close"></i>
+
+        <i class="fas fa-bars text-indigo-800 nav-open"></i>
+      </button>
+      <ul class="hidden gap-3 md:flex">
+        <li>
+          <a href="#hero" class="link">home</a>
+        </li>
+        <li>
+          <a href="#about" class="link">about me</a>
+        </li>
+        <li>
+          <a href="#services" class="link">services</a>
+        </li>
+        <li>
+          <a href="#portfolio" class="link">portfolio</a>
+        </li>
+        <li>
+          <a href="#contact" class="link">contact</a>
+        </li>
+      </ul>
+
+      <!--MOBILE NAV -->
+      <ul
+        class="mobile-nav hidden absolute left-0 top-0 bg-indigo-800 w-full h-screen center flex-col gap-3"
+      >
+        <li>
+          <a
+            href="#hero"
+            class="text-white capitalize hover:border-blue-50 border-b-2"
+            >home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#about"
+            class="text-white capitalize hover:border-blue-50 border-b-2"
+            >about me</a
+          >
+        </li>
+        <li>
+          <a
+            href="#services"
+            class="text-white capitalize hover:border-blue-50 border-b-2"
+            >services</a
+          >
+        </li>
+        <li>
+          <a
+            href="#portfolio"
+            class="text-white capitalize hover:border-blue-50 border-b-2"
+            >portfolio</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact"
+            class="text-white capitalize hover:border-blue-50 border-b-2"
+            >contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <!-- SECTION HERO -->
+      <section
+        id="hero"
+        class="container h-screen bg-gradient-to-t from-indigo-200 flex justify-center align-center"
+      >
+        <div
+          class="flex flex-col align-middle justify-between text-center h-100 mx-auto md:flex-row md:gap-6"
+        >
+          <div>
+            <p class="font-800 text-indigo-700 text-2xl">Hi, I'm John</p>
+            <p class="text-sm w-sm mx-auto">
+              with over 10 years of experience on web design and development.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. N oumquam
+              quo provident, facere minus temporibus veniam nostrum
+              reprehenderit nihil?
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION HERO -->
+
+      <section id="about" class="py-20 my-20">
+        <div
+          class="container mx-auto flex justify-center items-center gap-32 flex-wrap"
+        >
+          <!-- left -->
+
+          <div class="w-sm text-center md:w-m lg:text-left">
+            <h2 class="text-indigo-800 font-800">ABOUT ME</h2>
+            <p class="text-2xl font-600 my-5">
+              Better Design Better Experience
+            </p>
+            <p class="text-gray-500">
+              I design and build digital products. I'm also a multi-disciplinary
+              maker with over 10 years of experiences in wide range of design
+              disciplines.
+            </p>
+            <div class="text-left capitalize text-gray-600 mt-7">
+              <div>
+                <p class="mb-2">html</p>
+                <div class="h-1 bg-indigo-700 mb-5"></div>
+              </div>
+              <div>
+                <p class="mb-2">css</p>
+                <div class="h-1 w-4/5 bg-indigo-700 mb-5"></div>
+              </div>
+              <div>
+                <p class="mb-2">javascript</p>
+                <div class="h-1 w-3/5 bg-indigo-700 mb-5"></div>
+              </div>
+            </div>
+          </div>
+          <!-- right -->
+          <div
+            class="bg-indigo-500 rounded-full w-sm h-80 relative overflow-hidden"
+          >
+            <img src="./imgs/hero.png" class="position-center" />
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION services -->
+      <section id="services" class="py-20 bg-indigo-50">
+        <div class="container mx-auto">
+          <div class="w-sm text-center mx-auto md:w-m">
+            <h2 class="text-indigo-800 font-800 uppercase">services</h2>
+            <p class="text-2xl font-600 my-5 capitalize">what do i offer?</p>
+            <p class="text-gray-500">
+              My approach to website design is to create a website that
+              strengthens your company’s brand while ensuring ease of use and
+              simplicity for your audience.
+            </p>
+          </div>
+
+          <div class="mt-20 flex flex-wrap justify-center items-center gap-10">
+            <article class="card">
+              <h3 class="text-xl font-600 mb-2 capitalize">UI / UX design</h3>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                asperiores accusamus dolorum consequatur distinctio
+                necessitatibus.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="text-xl font-600 mb-2 capitalize">
+                front end development
+              </h3>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                asperiores accusamus dolorum consequatur distinctio
+                necessitatibus.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="text-xl font-600 mb-2 capitalize">
+                back end development
+              </h3>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                asperiores accusamus dolorum consequatur distinctio
+                necessitatibus.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="text-xl font-600 mb-2 capitalize">testing</h3>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                asperiores accusamus dolorum consequatur distinctio
+                necessitatibus.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION projects -->
+
+      <section id="portfolio" class="py-20">
+        <div class="container mx-auto">
+          <div class="w-sm text-center mx-auto md:w-m">
+            <h2 class="text-indigo-800 font-800 uppercase">portfolio</h2>
+            <p class="text-2xl font-600 my-5 capitalize">porjects</p>
+            <p class="text-gray-500">
+              I help designers, small agencies and businesses bring their ideas
+              to life. Powered by Figma, VS Code and coffee, I turn your
+              requirements into a well-designed websites
+            </p>
+          </div>
+
+          <div class="mt-20 flex flex-wrap justify-center items-center gap-10 lg:max-w-7xl lg:mx-auto">
+          
+              <img src="./imgs/projects/project-1.jfif" alt=" fill project"  class="w-sm hover:scale-110"/>
+           
+          
+              <img src="./imgs/projects/project-2.png" alt="luckin coffee website" class="w-sm hover:scale-110" />
+           
+          
+              <img src="./imgs/projects/project3.png" alt="plants e-commerce" 
+               class="w-sm hover:scale-110"/>
+         
+              <img src="./imgs/projects/project-4.jfif" alt="furniture e-commerce" class="w-sm hover:scale-110" />
+         
+              <img src="./imgs/projects/project-5.png" alt="flowers website" class="w-sm hover:scale-110" />
+           
+              <img src="./imgs/projects/project-6.jfif" alt="fashion website" class="w-sm hover:scale-110" />
+          
+          </div>
+        </div>
+      </section>
+      <!-- SECTION contact -->
+      <section id="contact" class="py-20 bg-indigo-50">
+        <div class="container mx-auto">
+            <div class="w-sm text-center mx-auto md:w-m">
+              <h2 class="text-indigo-800 font-800 uppercase">contact</h2>
+              <p class="text-2xl font-600 my-5 capitalize">let's work together</p>
+              <p class="text-gray-500">
+                Do you have an idea? Let's discuss it and see what we can do together.
+              </p>
+            </div>
+
+            <form class="flex flex-col items-center gap-4 mt-10">
+                <input 
+                type="text" 
+                name="name"
+                placeholder="name"
+                required
+                class="
+                border-indigo-800
+                border-2
+                rounded-md
+                py-2
+                px-4
+                w-sm
+                md:w-m
+                "
+                
+
+                />
+                <input
+                type="email"
+                name="email"
+                placeholder="email"
+                required
+                class="
+                border-indigo-800
+                border-2
+                rounded-md
+                px-4
+                py-2
+                w-sm
+                md:w-m
+             
+                "
+/>
+<textarea
+name="message"
+
+placeholder="message ..."
+required
+rows="8"
+class="
+border-indigo-800
+border-2
+rounded-md
+px-4
+w-sm
+md:w-m
+
+"
+>
+
+
+
+</textarea>
+<button
+ type="submit"
+ name="submit"
+ class="text-gray-200
+ bg-indigo-800
+ px-6
+ py-2
+
+ rounded-md
+ hover:bg-indigo-600"
+>send message</button>
+            </form>
+            </div>
+      </section>
+ 
+    </main>
+
+    <footer class="bg-indigo-900 px-7 py-3 w-full ">
+   
+
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
